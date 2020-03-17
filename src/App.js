@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import {Switch, Route, withRouter} from 'react-router-dom';
+// import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import LandingPage from './pages/LandingPage';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import PageNotFound from './pages/PageNotFound';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App Site">
+        <div className="Site-content">
+          <div className="Site-header">
+            {/* <Navbar history={this.props.history}/> */}
+          </div>
+          <div>
+            {/* <Router> */}
+              <div className="main">
+                <Switch>
+                  <Route exact path="/" component={LandingPage} />
+                  <Route path="/about" component={About} />
+                  <Route path="/contact" component={Contact} />
+                  <Route path="/portfolio" component={Portfolio} />
+
+                  <Route path="*" component={PageNotFound} />
+                </Switch>
+              </div>
+            {/* </Router> */}
+          </div>
+        </div>
+        {/* <Footer /> */}
+      </div>
+
+    );
+  }
 }
 
-export default App;
+export default withRouter(App);
