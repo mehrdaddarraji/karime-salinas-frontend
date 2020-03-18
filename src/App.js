@@ -3,6 +3,10 @@ import {Switch, Route, withRouter} from 'react-router-dom';
 // import logo from './logo.svg';
 import './App.css';
 
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+// pages
 import LandingPage from './pages/LandingPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -16,6 +20,7 @@ class App extends Component {
         <div className="Site-content">
           <div className="Site-header">
             {/* <Navbar history={this.props.history}/> */}
+            <Navbar />
           </div>
           <div>
             {/* <Router> */}
@@ -32,7 +37,7 @@ class App extends Component {
             {/* </Router> */}
           </div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
 
     );
