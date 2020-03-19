@@ -1,11 +1,5 @@
 language: node_js
 node_js:
 - 13.11.0
-branches:
-    except:
-    - master
-branches:
-    only:
-    - cicd
 script:
 - npm run build
