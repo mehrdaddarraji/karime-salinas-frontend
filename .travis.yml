@@ -1,5 +1,13 @@
 language: node_js
+node_js:
+- "stable"
 before_script:
-- npm install
+- nvm install 6.9.0
+branches:
+    except:
+    - master
+branches:
+    only:
+    - cicd
 script:
 - npm run build
