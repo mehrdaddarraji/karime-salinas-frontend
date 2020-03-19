@@ -4,7 +4,7 @@ class Email extends Component {
     render() {
         return (
             <form>
-                <div style={{ marginLeft:'45%', width:'400px', marginTop:'20px', fontFamily: '"Avantgarde", sans-serif', color:'#0C0B37'}}>
+                <div style={{fontFamily: '"Avantgarde", sans-serif', color:'#0C0B37', width:'400px'}}>
                     
                     <div class="form-group" style={{ marginLeft:'2%' }}>
                         <h2>Contact Us</h2>
