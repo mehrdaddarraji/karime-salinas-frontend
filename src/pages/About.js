@@ -36,29 +36,29 @@ class About extends Component {
                     </div>
                     <div className="row justify-content-center mt-4">
                         <div className="col">
-                            <div class="card border-0" style={{width: "18rem"}}>
-                                <img class="card-img-top rounded" src="..." alt="Card designs" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Designs</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div className="card border-0" style={{width: "18rem"}}>
+                                <img className="card-img-top rounded" src="..." alt="Card designs" />
+                                <div className="card-body">
+                                    <h5 className="card-title">Designs</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col">
-                            <div class="card border-0" style={{width: "18rem"}}>
-                                <img class="card-img-top rounded" src="..." alt="Card logos" />
-                                <div class="card-body">
-                                    <h5 class="card-title">Logos</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div className="card border-0" style={{width: "18rem"}}>
+                                <img className="card-img-top rounded" src="..." alt="Card logos" />
+                                <div className="card-body">
+                                    <h5 className="card-title">Logos</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col">
-                            <div class="card border-0" style={{width: "18rem"}}>
-                                <img class="card-img-top rounded" src="..." alt="Card t-shirts" />
-                                <div class="card-body">
-                                    <h5 class="card-title">T-Shirts</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div className="card border-0" style={{width: "18rem"}}>
+                                <img className="card-img-top rounded" src="..." alt="Card t-shirts" />
+                                <div className="card-body">
+                                    <h5 className="card-title">T-Shirts</h5>
+                                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
                         </div>
