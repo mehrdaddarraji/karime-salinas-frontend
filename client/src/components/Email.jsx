@@ -29,7 +29,7 @@ class Email extends Component {
 
         const { firstName, lastName, email, phone, message } = this.state
         
-        const form = await axios.post('/api/form', {
+        await axios.post('/api/form', {
             firstName,
             lastName,
             email,
