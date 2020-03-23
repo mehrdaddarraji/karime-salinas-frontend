@@ -6,8 +6,8 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const mailgun = require("mailgun-js");
-const DOMAIN = SECRET_DOMAIN;
-const api_key = SECRET_KEY;
+const DOMAIN = process.env.SECRET_DOMAIN;
+const api_key = process.env.SECRET_KEY;
 
 
 // initialize express app
