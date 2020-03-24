@@ -9,7 +9,7 @@ class Footer extends Component {
 
                     <div className="container-fluid text-center text-md-left">
 
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center text-center py-5">
 
                             <div style={{ textAlign:'end'}}>
                                 <img className="navbar-brand mr-5" src={logoImg} height="150" width="150" alt="Kari Sali Designs" />
