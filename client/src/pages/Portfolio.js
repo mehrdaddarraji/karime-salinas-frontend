@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Radium, { Style } from 'radium';
+import Radium from 'radium';
 import {Link} from "react-router-dom";
 import conchaImg from '../img/conchita.jpg';
 import vinylImg from '../img/Mockup.jpg';
