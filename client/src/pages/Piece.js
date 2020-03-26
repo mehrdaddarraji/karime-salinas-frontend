@@ -95,7 +95,7 @@ class Piece extends Component {
                     </div>
                 </div>
                 <Link to='/portfolio'>
-                    <a style={{color:'gray'}} >back to portfolio</a>
+                    <p style={{color:'gray'}} >back to portfolio</p>
                 </Link>
             </div>
             
