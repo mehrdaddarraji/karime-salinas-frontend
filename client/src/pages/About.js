@@ -22,11 +22,9 @@ class About extends Component {
                         <h1><b>in</b></h1>
                     </div>
                     <div className="row justify-content-center mt-2" style={{ paddingRight:"10%", paddingLeft: "10%"}}>
-                        <p>text text text text text text text text text text text text text text text 
-                            text text text text text text text text text text text text text text text 
-                            text text text text text text text text text text text text text text text 
-                            text text text text text text text text text text text text text text text 
-                            text text text text text text text text text text</p>
+                        <p>My name is Karime Salinas and I enjoy blending my love for drawing and graphic design by creating
+                           digital illustrations that are fun and enjoyable. Visual communication is a skill that I like to 
+                           embrace and use in my work to show my voice as a designer</p>
                     </div>
                 </div>
                 <div className="container my-5 text-secondary">
