@@ -7,7 +7,7 @@ class Piece extends Component {
         var description = 'description';
 
         if (path === "/portfolio/tamagochi") {
-            title = 'TAMAGOTCH STICKER DESIGN';
+            title = 'TAMAGOTCHI STICKER DESIGN';
             description = `The design for this sticker was inspired by the handheld Tamagotchi digital pets made popular
                 in the 90’s. I created a digital illustration of a tin lunchbox with a cute reminder to feed your
                 forgotten childhood Tamagotchi. I like when designs have a touch of nostalgia and this piece
