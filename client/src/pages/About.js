@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import logoImg from '../img/logooo.jpg';
+import tshirtConchitaImg from '../img/tshirtconchita.jpg';
+import conchitaImg from '../img/conchita.jpg';
 
 class About extends Component {
     render() {
@@ -24,7 +26,7 @@ class About extends Component {
                     <div className="row justify-content-center mt-2" style={{ paddingRight:"10%", paddingLeft: "10%"}}>
                         <p>My name is Karime Salinas and I enjoy blending my love for drawing and graphic design by creating
                            digital illustrations that are fun and enjoyable. Visual communication is a skill that I like to 
-                           embrace and use in my work to show my voice as a designer</p>
+                           embrace and use in my work to show my voice as a designer!</p>
                     </div>
                 </div>
                 <div className="container my-5 text-secondary">
@@ -38,27 +40,27 @@ class About extends Component {
                                 <img className="card-img-top rounded-circle" src={logoImg} alt="Card designs" />
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Designs</h5>
-                                    <h5 className="text-center">&mdash;&mdash;&mdash;</h5>
+                                    <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
                                     <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col">
                             <div className="card border-0" style={{width: "18rem"}}>
-                                <img className="card-img-top rounded-circle" src={logoImg} alt="Card logos" />
+                                <img className="card-img-top rounded-circle" src={conchitaImg} alt="Card logos" />
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Logos</h5>
-                                    <h5 className="text-center">&mdash;&mdash;&mdash;</h5>
+                                    <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
                                     <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="col">
                             <div className="card border-0" style={{width: "18rem"}}>
-                                <img className="card-img-top rounded-circle" src={logoImg} alt="Card t-shirts" />
+                                <img className="card-img-top rounded-circle" src={tshirtConchitaImg} alt="Card t-shirts" />
                                 <div className="card-body">
                                     <h5 className="card-title text-center">T-Shirts</h5>
-                                    <h5 className="text-center">&mdash;&mdash;&mdash;</h5>
+                                    <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
                                     <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
