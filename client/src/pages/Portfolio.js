@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Radium from 'radium';
 import {Link} from "react-router-dom";
 import conchaImg from '../img/conchita.jpg';
 import vinylImg from '../img/Mockup.jpg';
@@ -27,6 +26,23 @@ const styles = {
         borderColor:'#373B4D',
     },
     container: {
+    },
+    imageContainer: {
+        position: 'relative',
+        margin: '20px auto 0',
+        width: '100%',
+        maxWidth: '400px',
+        display:'inline-block'
+    },
+    theImage: {
+        display: 'block',
+        position: 'relative',
+        width: '100%'
+    },
+    theButton: {
+        position: 'absolute',
+        left: '0px',
+        top: '0px'
     }
 };
 
@@ -37,24 +53,28 @@ class Portfolio extends Component {
             <div style={{margin:'3%'}} className="row text-center">
                 <div  className="col-lg-4 col-md-12 mb-4">
                     
-                    <div style={styles.container} key='key1'>
-                        <img src={conchaImg} style={styles.image} key='key2' className="img-fluid mb-4" alt="Conchita"></img>
-                        <div style={styles.middle} key='key3'>
-                            <Link to='/contact'>
-                                <button formaction="/contact" style={styles.buttonMiddle} key='key4' type="button" className="btn btn-primary">read more</button>
+                    <div>
+                        <img src={conchaImg} className="img-fluid mb-4" alt="Conchita"></img>
+                            <Link to='/portfolio/yruama'>
+                                <button type="submit" className="btn btn-primary">read more</button>
                             </Link>
-                        </div>
                     </div>
                 </div>
                 
                 <div className="col-lg-4 col-md-6 mb-4">
 
-                        <img src={vinylImg} style={styles.image} key='key6' className="img-fluid mb-4" alt="Conchita"></img>
+                        <img src={vinylImg} style={styles.image} key='key6' className="img-fluid mb-4" alt="Vinyl"></img>
+                        <Link to='/portfolio/hindsvinyl'>
+                            <button type="submit" className="btn btn-primary">read more</button>
+                        </Link>
 
                 </div>
                 <div className="col-lg-4 col-md-6 mb-4">
 
-                        <img src={tamaImg} style={styles.image} key='key' className="img-fluid mb-4" alt="Conchita"></img>
+                        <img src={tamaImg} style={styles.image} key='key' className="img-fluid mb-4" alt="Tama"></img>
+                        <Link to='/portfolio/tamagachi'>
+                            <button type="submit" className="btn btn-primary">read more</button>
+                        </Link>
                 </div>
 
             </div>
@@ -62,4 +82,4 @@ class Portfolio extends Component {
     }
 }
 
-export default Radium(Portfolio);
+export default Portfolio;

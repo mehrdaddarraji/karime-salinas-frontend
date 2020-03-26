@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import LandingPage from './pages/LandingPage';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Piece from './pages/Piece';
 import Portfolio from './pages/Portfolio';
 import PageNotFound from './pages/PageNotFound';
 
@@ -29,7 +30,10 @@ class App extends Component {
                   <Route exact path="/" component={LandingPage} />
                   <Route path="/about" component={About} />
                   <Route path="/contact" component={Contact} />
-                  <Route path="/portfolio" component={Portfolio} />
+                  <Route exact path="/portfolio" component={Portfolio} />
+                  <Route exact path="/portfolio/yruama" component={Piece} />
+                  <Route exact path="/portfolio/tamagochi" component={Piece} />
+                  <Route exact path="/portfolio/hindsvinyl" component={Piece} />
 
                   <Route path="*" component={PageNotFound} />
                 </Switch>
