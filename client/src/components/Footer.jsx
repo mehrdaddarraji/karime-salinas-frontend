@@ -9,7 +9,7 @@ class Footer extends Component {
 
                     <div className="container-fluid text-center text-md-left">
 
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center text-center py-5">
 
                             <div style={{ textAlign:'end'}}>
                                 <img className="navbar-brand mr-5" src={logoImg} height="150" width="150" alt="Kari Sali Designs" />
@@ -21,7 +21,7 @@ class Footer extends Component {
                             <div className="col-md-3" aria-controls="navbarText" aria-expanded="false">
 
                                 <h5 className="text-uppercase" style={{ color:'gray'}}>Contact</h5>
-                                <hr class="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: '60px', background:'gray'}}></hr>
+                                <hr className="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: '60px', background:'gray'}}></hr>
 
                                 <ul style={{ color:'gray'}}className="list-unstyled">
                                     <li>
@@ -37,12 +37,12 @@ class Footer extends Component {
                             <div className="col-md-3">
 
                                 <h5 className="text-uppercase" style={{ color:'gray'}}>Social</h5>
-                                <hr style={{width: '60px', background:'gray'}} class="accent-2 mb-4 mt-0 d-inline-block mx-auto"></hr>
+                                <hr style={{width: '60px', background:'gray'}} className="accent-2 mb-4 mt-0 d-inline-block mx-auto"></hr>
 
-                                <div class="row pb-3">
-                                    <div class="col-md-12">
+                                <div className="row pb-3">
+                                    <div className="col-md-12">
 
-                                        <div class="mb-5 flex-center">
+                                        <div className="mb-5 flex-center">
                                         </div>
                                     </div>
                                 </div>
