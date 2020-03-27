@@ -10,6 +10,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
+// Awesome Fond
+import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
+import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
+
 ReactDOM.render(
     <Router>
         <App />
