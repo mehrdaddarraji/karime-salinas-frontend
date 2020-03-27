@@ -19,9 +19,9 @@ class Navbar extends Component {
                                 <li className="nav-item px-4">
                                     <a className="nav-link" href="/">Home</a>
                                 </li>
-                                <li className="nav-item px-4">
+                                {/* <li className="nav-item px-4">
                                     <a className="nav-link" href="/about">About</a>
-                                </li>
+                                </li> */}
                                 <li className="nav-item px-4">
                                     <a className="nav-link" href="/portfolio">Portfolio</a>
                                 </li>

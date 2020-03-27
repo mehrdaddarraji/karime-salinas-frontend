@@ -1,21 +1,64 @@
 import React, {Component} from 'react';
+import logoImg from '../img/logooo.jpg';
+import tshirtConchitaImg from '../img/tshirtconchita.jpg';
 import conchitaImg from '../img/conchita.jpg';
-import mockupImg from '../img/Mockup.jpg';
-import tamaStickerImg from '../img/tama_sticker.jpg';
 
 class LandingPage extends Component {
     render() {
         return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-4 col-md-6 mb-4">
-                        <img className="img-fluid" src={conchitaImg} alt="conchita" />
+            <div>
+                <div className="container text-secondary">
+                    <div className="row justify-content-center mt-4">
+                        <img src={logoImg} alt="Kari Sali" height="500" width="500" />
                     </div>
-                    <div className="col-lg-4 col-md-6 mb-4">
-                        <img className="img-fluid" src={mockupImg} alt="mockup" />
+                    <div className="row justify-content-center mt-2">
+                        <h4><em>Karime Salinas</em></h4>
                     </div>
-                    <div className="col-lg-4 col-md-6 mb-4">
-                        <img className="img-fluid" src={tamaStickerImg} alt="tama sticker" />
+                    <div className="row justify-content-center mt-2">
+                        <h1><b>in</b></h1>
+                    </div>
+                    <div className="row justify-content-center mt-2" style={{ paddingRight:"10%", paddingLeft: "10%"}}>
+                        <p>My name is Karime Salinas and I enjoy blending my love for drawing and graphic design by creating
+                           digital illustrations that are fun and enjoyable. Visual communication is a skill that I like to 
+                           embrace and use in my work to show my voice as a designer!</p>
+                    </div>
+                </div>
+                <div className="container my-5 text-secondary">
+                    <br></br>
+                    <div className="row justify-content-center">
+                        <h1>SERVICES</h1>
+                    </div>
+                    <div className="row justify-content-center mt-4">
+                        <div className="col">
+                            <div className="card border-0" style={{width: "18rem"}}>
+                                <img className="card-img-top rounded-circle" src={logoImg} alt="Card designs" />
+                                <div className="card-body">
+                                    <h5 className="card-title text-center">Designs</h5>
+                                    <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
+                                    <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card border-0" style={{width: "18rem"}}>
+                                <img className="card-img-top rounded-circle" src={conchitaImg} alt="Card logos" />
+                                <div className="card-body">
+                                    <h5 className="card-title text-center">Logos</h5>
+                                    <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
+                                    <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col">
+                            <div className="card border-0" style={{width: "18rem"}}>
+                                <img className="card-img-top rounded-circle" src={tshirtConchitaImg} alt="Card t-shirts" />
+                                <div className="card-body">
+                                    <h5 className="card-title text-center">T-Shirts</h5>
+                                    <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
+                                    <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
