@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {Link} from "react-router-dom";
 
 // yruama images
 import conchaMain from '../img/conchita.jpg';
