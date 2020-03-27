@@ -11,8 +11,8 @@ import 'jquery/dist/jquery.min.js';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
 // Awesome Fond
-import '@fortawesome/fontawesome-free/css/fontawesome.min.css';
-import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
+import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/js/all.min.js';
 
 ReactDOM.render(
     <Router>
