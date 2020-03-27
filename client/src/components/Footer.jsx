@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import logoImg from '../img/logooo.jpg';
+import {Link} from "react-router-dom";
 
 class Footer extends Component {
     render() {
@@ -43,9 +44,9 @@ class Footer extends Component {
                                 <div className="row pb-3">
                                     <div className="col-md-12">
                                         <div style={{display:'flex', alignItems:'baseline', justifyContent:'space-evenly'}}>
-                                            <a href="https://www.google.com"><a className="fab fa-instagram" style={{color:'#373B4D'}}></a></a>
-                                            <a href="https://www.google.com"><a className="fab fa-linkedin-in" style={{color:'#373B4D'}}></a></a>
-                                            <a href="https://www.google.com"><a className="fab fa-google" style={{color:'#373B4D'}}></a></a>
+                                            <a href="https://www.google.com"><div className="fab fa-instagram" style={{color:'#373B4D'}}></div></a>
+                                            <a href="https://www.google.com"><div className="fab fa-linkedin-in" style={{color:'#373B4D'}}></div></a>
+                                            <a href="https://www.google.com"><div className="fab fa-google" style={{color:'#373B4D'}}></div></a>
                                         </div>
                                     </div>
                                 </div>

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Email from '../components/Email';
 
+
 class Contact extends Component {
     render() {
         return (
@@ -10,9 +11,9 @@ class Contact extends Component {
                         <p>Inquiries:</p>
                         <p>Please fill out the form on the right to email us directly at example@gmail.com</p>
                         <div style={{width:'60%', display:'flex', alignItems:'flex-start', justifyContent:'space-between'}}>
-                            <a href="https://www.google.com"><a className="fab fa-instagram" style={{color:'#373B4D'}}></a></a>
-                            <a href="https://www.google.com"><a className="fab fa-linkedin-in" style={{color:'#373B4D'}}></a></a>
-                            <a href="https://www.google.com"><a className="fab fa-google" style={{color:'#373B4D'}}></a></a>
+                            <a href="https://www.google.com"><div className="fab fa-instagram" style={{color:'#373B4D'}}></div></a>
+                            <a href="https://www.google.com"><div className="fab fa-linkedin-in" style={{color:'#373B4D'}}></div></a>
+                            <a href="https://www.google.com"><div className="fab fa-google" style={{color:'#373B4D'}}></div></a>
                         </div>
                 </div>
 
