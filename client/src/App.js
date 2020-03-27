@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 
 // pages
 import LandingPage from './pages/LandingPage';
-import About from './pages/About';
+// import About from './pages/About';
 import Contact from './pages/Contact';
 import Piece from './pages/Piece';
 import Portfolio from './pages/Portfolio';
