@@ -18,24 +18,24 @@ const styles = {
 class Portfolio extends Component {
     render() {
         return (
-            <div style={{margin:'3%'}} className="row text-center">
-                <div style= {styles.image} key='key1' className="col-lg-4 col-md-12 mb-4">
+            <div style={{margin:'3%'}} className="row text-center container">
+                <div className="col-lg-4 col-md-12 mb-4">
                     <Link to='/portfolio/yruama'>
-                        <img src={conchaImg} className="img-fluid mb-4" alt="Conchita"></img>
+                        <img style= {styles.image} key='key1' src={conchaImg} className="img-fluid mb-4" alt="Conchita"></img>
                     </Link>
                     <p style={{color:'gray'}}>Yruama T-Shirt Design</p>
                 </div>
 
-                <div style= {styles.image} key='key2' className="col-lg-4 col-md-6 mb-4">
+                <div className="col-lg-4 col-md-6 mb-4">
                     <Link to='/portfolio/hindsvinyl'>
-                        <img src={vinylImg} className="img-fluid mb-4" alt="Vinyl"></img>
+                        <img style= {styles.image} key='key2' src={vinylImg} className="img-fluid mb-4" alt="Vinyl"></img>
                     </Link>
                     <p style={{color:'gray'}}>Hinds Vinyl Cover Design</p>
                 </div>
 
-                <div style= {styles.image} key='key3' className="col-lg-4 col-md-6 mb-4">
+                <div className="col-lg-4 col-md-6 mb-4">
                     <Link to='/portfolio/tamagochi'>
-                        <img src={tamaImg} className="img-fluid mb-4" alt="Tama"></img>
+                        <img style= {styles.image} key='key3' src={tamaImg} className="img-fluid mb-4" alt="Tama"></img>
                     </Link>
                     <p style={{color:'gray'}}>Tamagotchi Sticker Design</p>
                 </div>

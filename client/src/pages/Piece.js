@@ -64,7 +64,7 @@ class Piece extends Component {
                 pic_one = hindsCover;
         }
         return (
-            <div style={styles.pageContainer} name="page-container">
+            <div name="page-container" className="container">
                 <div style={{color:'gray', margin:'3%'}} name='text'>
                     <div name='title'>
                         <h1>{title}</h1>
@@ -94,9 +94,7 @@ class Piece extends Component {
                         )}
                     </div>
                 </div>
-                <Link to='/portfolio'>
-                    <p style={{color:'gray'}} >back to portfolio</p>
-                </Link>
+                <a style={{color:'gray'}} href='/portfolio'>back to portfolio</a>
             </div>
             
             
