@@ -20,8 +20,7 @@ class App extends Component {
       <div className="App Site">
         <div className="Site-content">
           <div className="Site-header">
-            {/* <Navbar history={this.props.history}/> */}
-            <Navbar />
+            <Navbar history={this.props.history}/>
           </div>
           <div>
             {/* <Router> */}
