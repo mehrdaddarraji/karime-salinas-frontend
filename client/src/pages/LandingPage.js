@@ -16,7 +16,12 @@ class LandingPage extends Component {
                         <h4><em>Karime Salinas</em></h4>
                     </div>
                     <div className="row justify-content-center mt-2">
-                        <h1><b>in</b></h1>
+                        <b></b>
+                        <h1>
+                            <a style={{ color: 'gray' }} href="https://www.linkedin.com/in/karime-salinas-b9098616b/">
+                                <div className="fab fa-linkedin-in"></div>
+                            </a>
+                        </h1>
                     </div>
                     <div className="row justify-content-center mt-2" style={{ paddingRight:"10%", paddingLeft: "10%"}}>
                         <p>My name is Karime Salinas and I enjoy blending my love for drawing and graphic design by creating
@@ -36,7 +41,8 @@ class LandingPage extends Component {
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Designs</h5>
                                     <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
-                                    <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p className="card-text text-center">I provide graphic design services by developing the layout and production
+                                    of concepts such as poster design, brochures, business cards, and stationary.</p>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +52,8 @@ class LandingPage extends Component {
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Logos</h5>
                                     <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
-                                    <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p className="card-text text-center">I follow my clients through the logo making process of brainstorming, sketching,
+                                     and creating. It is my goal to create a distinctive logo that will represent what my client’s company or project is about.</p>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +63,8 @@ class LandingPage extends Component {
                                 <div className="card-body">
                                     <h5 className="card-title text-center">Illustrations</h5>
                                     <hr className="accent-2" style={{width: '60px', background:'gray'}}></hr>
-                                    <p className="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p className="card-text text-center">I can create custom digital illustrations for projects that will follow the project’s
+                                     brand identity. This can be done through forms such as prints, gifs, and stickers.</p>
                                 </div>
                             </div>
                         </div>
