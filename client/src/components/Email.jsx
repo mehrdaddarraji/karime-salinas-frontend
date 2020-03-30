@@ -12,7 +12,8 @@ class Email extends Component {
             email: '',
             phone: '',
             message: '',
-            submitted: false
+            submitted: false,
+            errMessage: false,
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -29,23 +30,37 @@ class Email extends Component {
 
         const { firstName, lastName, email, phone, message } = this.state
         
-        await axios.post('/api/form', {
+        const res = await axios.post('/api/form', {
             firstName,
             lastName,
             email,
             phone,
             message
         })
+        console.log('after post')
+
+        if (res.status === 200) {
+            this.setState ({
+                firstName: '',
+                lastName: '',
+                email: '',
+                phone: '',
+                message: '',
+                submitted: true
+            })
+        } else {
+            this.setState ({
+                firstName: '',
+                lastName: '',
+                email: '',
+                phone: '',
+                message: '',
+                submitted: true,
+                errMessage: true
+            })
+        }
         
-        this.setState({ submitted: true})
         
-        this.setState ({
-            firstName: '',
-            lastName: '',
-            email: '',
-            phone: '',
-            message: ''
-        })
         
     }
 
@@ -95,25 +110,25 @@ class Email extends Component {
 
                     <button style={{ marginLeft:'80%', backgroundColor:'#373B4D', borderColor:'#373B4D'}}  type="submit" className="btn btn-primary">Send</button>
 
-                    {this.state.submitted ? (
+                    {this.state.submitted && !this.state.errMessage? (
                         <div style={{ marginTop:'20px' }} className="alert alert-success" alert-dismissible fade show role="alert">
                             Message Sent!
                             <button type="button" className="close" data-dismiss="alert" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                    ) : (
+                    ) : this.state.submitted && this.state.errMessage? (
 
-                        <div></div>
                         // TODO: have an error message?
-                        /* <div style={{ marginTop:'20px' }} className="alert alert-warning" role="alert">
-                            Message not sent!
-                            <button type="button" className="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div> */
+                        <div style={{ marginTop:'20px' }} class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Oops, message not sent!</strong> Try emailing directly, or contacting through other means.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                    ) : (
+                        <div></div>
                     )}
-                    
                 </div>
             </form>
         );

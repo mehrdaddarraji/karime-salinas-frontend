@@ -1,13 +1,15 @@
 // https://www.youtube.com/watch?v=JpcLd5UrDOQ
 // https://www.youtube.com/watch?v=EPnBO8HgyRU
 
+require('dotenv').config()
+
 // get express
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
-const mailgun = require("mailgun-js");
-const DOMAIN = process.env.SECRET_DOMAIN;
-const api_key = process.env.SECRET_KEY;
+//const mailgun = require("mailgun-js");
+const email = process.env.EMAIL;
+const pass = process.env.EMAIL_PASSWORD;
 
 
 // initialize express app
@@ -16,13 +18,19 @@ const app = express();
 // configure data parsing for email form
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-
-
-
-const mg = mailgun({apiKey: api_key, domain: DOMAIN});
+//const mg = mailgun({apiKey: api_key, domain: DOMAIN});
 
 app.post('/api/form', (req, res) => {
     console.log(req.body)
+
+    var transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: email,//replace with your email
+            pass: pass //replace with your password
+        }
+    });
+        
 
     const htmlEmail = `
             <h3>Contact Details</h3>
@@ -43,9 +51,23 @@ app.post('/api/form', (req, res) => {
         text: req.body.message,
         html: htmlEmail 
     };
-    mg.messages().send(data, function (error, body) {
-        console.log(body);
+    // mg.messages().send(data, function (error, body) {
+    //     console.log(body);
+    // });
+    transporter.sendMail(data, function(error, info){
+        if (error) {
+            res.status(404)
+            console.log(error);
+            res.end()
+        }
+        else {
+            res.status(200)
+            console.log('Email sent: ' + info.response);
+        }
     });
+
+    return res.send('Email successfully sent')
+
 })
 
 // port 3001 or whatever port process.env sets up for us
