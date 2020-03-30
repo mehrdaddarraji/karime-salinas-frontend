@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import logoImg from '../img/logooo.jpg';
-import {Link} from "react-router-dom";
 
 class Footer extends Component {
     render() {
@@ -27,10 +26,10 @@ class Footer extends Component {
 
                                 <ul style={{ color:'gray'}}className="list-unstyled">
                                     <li>
-                                        <a style={{color:'#373B4D'}} href="/contact">example@gmail.com</a>
+                                        <a style={{color:'#373B4D'}} href="/contact">karisalinas113@gmail.com</a>
                                     </li>
                                     <li>
-                                        <a style={{color:'#373B4D'}} href="/contact">+1 (956) 123 4567</a>
+                                        <a style={{color:'#373B4D'}}>+1 (956) 123 4567</a>
                                     </li>
                                 </ul>
 
@@ -44,9 +43,10 @@ class Footer extends Component {
                                 <div className="row pb-3">
                                     <div className="col-md-12">
                                         <div style={{display:'flex', alignItems:'baseline', justifyContent:'space-evenly'}}>
-                                            <a href="https://www.google.com"><div className="fab fa-instagram" style={{color:'#373B4D'}}></div></a>
-                                            <a href="https://www.google.com"><div className="fab fa-linkedin-in" style={{color:'#373B4D'}}></div></a>
-                                            <a href="https://www.google.com"><div className="fab fa-google" style={{color:'#373B4D'}}></div></a>
+                                            <a href="https://www.instagram.com/karidesigns3/"><div className="fab fa-instagram" style={{color:'#373B4D'}}></div></a>
+                                            <a href="https://www.linkedin.com/in/karime-salinas-b9098616b/"><div className="fab fa-linkedin-in" style={{color:'#373B4D'}}></div></a>
+                                            <a href="https://www.behance.net/karimesalinas"><div className="fab fa-behance" style={{color:'#373B4D'}}></div></a>
+                                            
                                         </div>
                                     </div>
                                 </div>
