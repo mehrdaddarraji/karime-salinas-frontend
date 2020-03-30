@@ -28,9 +28,6 @@ class Footer extends Component {
                                     <li>
                                         <a style={{color:'#373B4D'}} href="/contact">karisalinas113@gmail.com</a>
                                     </li>
-                                    <li>
-                                        <a style={{color:'#373B4D'}}>+1 (956) 123 4567</a>
-                                    </li>
                                 </ul>
 
                             </div>
