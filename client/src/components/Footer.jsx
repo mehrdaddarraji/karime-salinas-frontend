@@ -4,6 +4,7 @@ import logoImg from '../img/logooo.jpg';
 class Footer extends Component {
     render() {
         return (
+            
             <div>
                 <footer className="page-footer font-small blue pt-4">
 
@@ -20,15 +21,12 @@ class Footer extends Component {
 
                             <div className="col-md-3" aria-controls="navbarText" aria-expanded="false">
 
-                                <h5 className="text-uppercase" style={{ color:'gray'}}>Contact</h5>
-                                <hr className="accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{width: '60px', background:'gray'}}></hr>
+                                <p style={{ color:'gray', fontSize:'16px', margin:'0', padding:'0'}}>Contact</p>
+                                <hr style={{width: '90px', borderColor:'gray', margin:'0', padding:'0'}} className="mb-4 d-inline-block"></hr>
 
                                 <ul style={{ color:'gray'}}className="list-unstyled">
                                     <li>
-                                        <a href="/contact">example@gmail.com</a>
-                                    </li>
-                                    <li>
-                                        <a href="/contact">+1 (956) 123 4567</a>
+                                        <a style={{color:'#373B4D'}} href="/contact">karisalinas113@gmail.com</a>
                                     </li>
                                 </ul>
 
@@ -36,23 +34,22 @@ class Footer extends Component {
 
                             <div className="col-md-3">
 
-                                <h5 className="text-uppercase" style={{ color:'gray'}}>Social</h5>
-                                <hr style={{width: '60px', background:'gray'}} className="accent-2 mb-4 mt-0 d-inline-block mx-auto"></hr>
+                                <p style={{ color:'gray', fontSize:'16px', margin:'0', padding:'0'}}>Social</p>
+                                <hr style={{width: '90px', borderColor:'gray', margin:'0', padding:'0'}} className="mb-4  d-inline-block"></hr>
 
                                 <div className="row pb-3">
                                     <div className="col-md-12">
-
-                                        <div className="mb-5 flex-center">
+                                        <div style={{display:'flex', alignItems:'baseline', justifyContent:'space-evenly'}}>
+                                            <a href="https://www.instagram.com/karidesigns3/"><div className="fab fa-instagram" style={{color:'#373B4D'}}></div></a>
+                                            <a href="https://www.linkedin.com/in/karime-salinas-b9098616b/"><div className="fab fa-linkedin-in" style={{color:'#373B4D'}}></div></a>
+                                            <a href="https://www.behance.net/karimesalinas"><div className="fab fa-behance" style={{color:'#373B4D'}}></div></a>
+                                            
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div className="footer-copyright text-center py-3">© 2020 Copyright:
                         <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
                     </div>
