@@ -6,19 +6,17 @@ class Footer extends Component {
         return (
             
             <div>
-                <footer className="page-footer font-small blue pt-4">
+                <footer className="page-footer font-small blue">
 
                     <div className="container-fluid text-center text-md-left">
 
-                        <div className="row justify-content-center text-center py-5">
+                        <div className="row justify-content-center text-center py-5" style={{display:'flex', alignItems:'center'}}>
+                            <hr className="clearfix w-100 d-md-none"></hr>
 
                             <div style={{ textAlign:'end'}}>
-                                <img className="navbar-brand mr-5" src={logoImg} height="150" width="150" alt="Kari Sali Designs" />
+                                <img className="navbar-brand" src={logoImg} height="150" width="150" alt="Kari Sali Designs" />
 
                             </div>
-
-                            <hr className="clearfix w-100 d-md-none pb-3"></hr>
-
                             <div className="col-md-3" aria-controls="navbarText" aria-expanded="false">
 
                                 <p style={{ color:'gray', fontSize:'16px', margin:'0', padding:'0'}}>Contact</p>
