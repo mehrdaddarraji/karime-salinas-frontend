@@ -2,7 +2,8 @@ import React, {Component} from 'react';
 
 // yruama images
 import conchaMain from '../img/conchita.jpg';
-import conchaShirt from '../img/tshirtconchita.jpg'
+import conchaShirt from '../img/tshirtconchita.jpg';
+import conchaMockup from '../img/concha_mockup.jpg';
 
 // hinds images
 import hindsMain from '../img/Mockup.jpg';
@@ -33,7 +34,7 @@ class Piece extends Component {
         var three_images = false;
 
         if (path === "/portfolio/tamagochi") {
-            title = 'TAMAGOTCHI STICKER DESIGN';
+            title = 'Tamagotchi Sticker Design';
             description = `The design for this sticker was inspired by the handheld Tamagotchi digital pets made popular
                 in the 90’s. I created a digital illustration of a tin lunchbox with a cute reminder to feed your
                 forgotten childhood Tamagotchi. I like when designs have a touch of nostalgia and this piece
@@ -45,16 +46,18 @@ class Piece extends Component {
             three_images = true;
 
         } else if (path === "/portfolio/yruama") {
-            title = 'YRUAMA TSHIRT DESIGN';
+            title = 'Yruama T-Shirt Design';
             description =`Yruama is a musical project located in McAllen, TX with a background and sound coming from
                 Mexico. Those roots are connected to using the beloved Mexican sweet bread, the concha, for
                 the shirt design. I hand lettered the typeface to mimic the iconic cracks of the concha and give
                 the design an overall movement.`;
                 main_pic = conchaMain;
                 pic_one = conchaShirt;
+                pic_two = conchaMockup;
+                three_images = true;
 
         } else if (path === "/portfolio/hindsvinyl") {
-            title = 'HINDS VINYL COVER';
+            title = 'Hinds Vinyl Cover';
             description = `Hinds is a Spanish indie rock band from Madrid formed by 4 women. This vinyl cover was
                 inspired by their song, Easy, from their 2016 album Leave Me Alone. I tried to match the
                 tumultuous energy of their music video by showing a lunch tray moments before a food fight,
@@ -63,20 +66,20 @@ class Piece extends Component {
                 pic_one = hindsCover;
         }
         return (
-            <div name="page-container" className="container">
-                <div style={{color:'gray', margin:'3%'}} name='text'>
-                    <div name='title'>
+            <div name="page-container" style={{display:'flex', flexDirection:'column', justifyContent:'center'}} className="container">
+                <div style={{color:'gray', paddingTop:'30px', display:'flex', flexDirection:'column', justifyContent:'center', textAlign:'center'}} name='text'>
+                    <div style={{display:'flex', alignSelf:'center', maxWidth:'50%'}} name='title'>
                         <h1>{title}</h1>
                     </div>
 
-                    <div name='description'>
+                    <div style={{display:'flex', alignSelf:'center', maxWidth:'80%'}} name='description'>
                         <p>{description}</p>
                     </div>
                     
                 </div>
-                <div name="artwork">
-                    <div className="col-lg-4 col-md-12 mb-4">
-                        <img src={main_pic} className="img-fluid mb-4" alt="Main Piece"></img>
+                <div style={{paddingTop:'30px'}} name="artwork">
+                    <div style={{display:'flex', justifyContent:'center'}} className="">
+                        <img src={main_pic} style={{maxWidth:'33.33%', display:'flex', alignSelf:'center'}} className="img-fluid mb-4" alt="Main Piece"></img>
                     </div>
 
                     <div style={{margin:'3%', justifyContent:'center'}} className="row text-center">
