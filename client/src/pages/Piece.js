@@ -79,7 +79,7 @@ class Piece extends Component {
                 </div>
                 <div style={{paddingTop:'30px'}} name="artwork">
                     <div style={{display:'flex', justifyContent:'center'}} className="">
-                        <img src={main_pic} style={{maxWidth:'33.33%', display:'flex', alignSelf:'center'}} className="img-fluid mb-4" alt="Main Piece"></img>
+                        <img src={main_pic} style={{maxWidth:'50%', display:'flex', alignSelf:'center'}} className="img-fluid mb-4" alt="Main Piece"></img>
                     </div>
 
                     <div style={{margin:'3%', justifyContent:'center'}} className="row text-center">

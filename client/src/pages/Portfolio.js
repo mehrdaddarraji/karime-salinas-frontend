@@ -18,7 +18,8 @@ const styles = {
 class Portfolio extends Component {
     render() {
         return (
-            <div style={{margin:'3%'}} className="row text-center container">
+            <div style={{margin:'3%', display:'flex', justifyContent:'center'}}>
+                <div className="row text-center container">
                 <div className="col-lg-4 col-md-12 mb-4">
                     <Link to='/portfolio/yruama'>
                         <img style= {styles.image} key='key1' src={conchaImg} className="img-fluid mb-4" alt="Conchita"></img>
@@ -41,6 +42,8 @@ class Portfolio extends Component {
                 </div>
 
             </div>
+            </div>
+            
         );
     }
 }
