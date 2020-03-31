@@ -67,7 +67,7 @@ class Email extends Component {
     render() {
         return (
             <form id= 'main-form' onSubmit={this.handleSubmit} ref='form'>
-                <div style={{fontFamily: '"Avantgarde", sans-serif', color:'#0C0B37', width:'400px'}}>
+                <div style={{fontFamily: '"Avantgarde", sans-serif', color:'#0C0B37', width:'auto'}}>
                     
                     <div className="form-group" style={{ marginLeft:'2%' }}>
                         <h2>Contact Us</h2>
