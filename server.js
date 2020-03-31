@@ -46,7 +46,7 @@ app.post('/api/form', (req, res) => {
 
     const data = {
         from: 'karisalidesigns@designrequest.com',
-        to: 'ixbaadriana@gmail.com',
+        to: 'karisalinas113@gmail.com',
         subject: 'New Design Request',
         text: req.body.message,
         html: htmlEmail 
