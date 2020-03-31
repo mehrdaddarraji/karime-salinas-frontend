@@ -6,8 +6,8 @@ class Contact extends Component {
     render() {
         return (
 
-            <div style={{overflow:'hidden', marginTop:'40px', marginLeft:'10%'}}>
-                <div style={{fontFamily: '"Avantgarde", sans-serif', color:'grey', marginTop:'10%', width:'20%', float:'left'}}>
+            <div style={{overflow:'hidden', margin:'3%', display:'flex', flexWrap:'wrap', justifyContent:'space-evenly', alignItems:'center'}}>
+                <div style={{fontFamily: '"Avantgarde", sans-serif', color:'grey', width:'30vmax', float:'left'}}>
                         <p>Inquiries:</p>
                         <p>Please fill out the form on the right to email directly at karisalinas113@gmail.com</p>
                         <div style={{width:'60%', display:'flex', alignItems:'flex-start', justifyContent:'space-between'}}>
@@ -18,7 +18,7 @@ class Contact extends Component {
                 </div>
 
             
-                <div style={{width:'50%', float:'right'}}>
+                <div style={{float:'right', display:'flex', alignSelf:'auto', padding:'20px'}}>
                     <Email />
                 </div>
             </div>
