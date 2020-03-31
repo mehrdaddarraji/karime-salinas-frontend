@@ -77,9 +77,9 @@ class Piece extends Component {
                     </div>
                     
                 </div>
-                <div style={{paddingTop:'30px'}} name="artwork">
-                    <div style={{display:'flex', justifyContent:'center'}} className="">
-                        <img src={main_pic} style={{maxWidth:'50%', display:'flex', alignSelf:'center'}} className="img-fluid mb-4" alt="Main Piece"></img>
+                <div style={{paddingTop:'30px', display:'flex', flexDirection:'column', alignContent:'center'}} name="artwork">
+                    <div style={{display:'flex', alignSelf:'center'}} className="col-lg-4 col-md-6 mb-4">
+                        <img src={main_pic} style={{display:'flex', alignSelf:'center'}} className="img-fluid mb-4" alt="Main Piece"></img>
                     </div>
 
                     <div style={{margin:'3%', justifyContent:'center'}} className="row text-center">
