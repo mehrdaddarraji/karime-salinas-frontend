@@ -1,17 +1,12 @@
-version: 1
+version: '3'
 
 services:
     server:
         build: .
         expose: 
             - 8000
-        environment: 
-            - EMAIL: ${EMAIL}
-            - EMAIL_PASSWORD: ${EMAIL_PASSWORD}
         ports:
             - 8000:8000
-        volumes:
-            - .:/app
         command: node server.js
 
     client:
@@ -20,9 +15,6 @@ services:
             - 3000
         ports:
             - 3000:3000
-        volumes:
-            - ./client/src:/app/client/src
-            - ./client/public:/app/client/public
         links:
             - server
             
