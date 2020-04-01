@@ -9,7 +9,7 @@ class Contact extends Component {
             <div style={{overflow:'hidden', margin:'3%', display:'flex', flexWrap:'wrap', justifyContent:'space-evenly', alignItems:'center'}}>
                 <div style={{fontFamily: '"Avantgarde", sans-serif', color:'grey', width:'30vmax', float:'left'}}>
                         <p>Inquiries:</p>
-                        <p>Please fill out the form on the right to email directly at karisalinas113@gmail.com</p>
+                        <p>Please fill out the following form to email directly at karisalinas113@gmail.com</p>
                         <div style={{width:'60%', display:'flex', alignItems:'flex-start', justifyContent:'space-between'}}>
                             <a href="https://www.instagram.com/karidesigns3/"><div className="fab fa-instagram" style={{color:'#373B4D'}}></div></a>
                             <a href="https://www.linkedin.com/in/karime-salinas-b9098616b/"><div className="fab fa-linkedin-in" style={{color:'#373B4D'}}></div></a>
