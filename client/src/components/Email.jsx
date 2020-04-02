@@ -76,21 +76,21 @@ class Email extends Component {
                     <div className="form-group"  >
                         <div className="col">
                             <label style={{ fontStyle:'italic'}} htmlFor="firstName">First Name</label>
-                            <input value={this.state.firstName} onChange={this.handleChange} style={{ border:'1px solid #0C0B37'}} type="text" className="form-control" name="firstName" aria-describedby="emailHelp"/>
+                            <input value={this.state.firstName} onChange={this.handleChange} style={{ border:'1px solid #0C0B37'}} type="text" className="form-control" name="firstName" aria-describedby="emailHelp" required/>
                         </div>
                     </div>
 
                     <div className="form-group" >
                         <div className="col">
                             <label style={{ fontStyle:'italic'}} htmlFor="lastName">Last Name</label>
-                            <input value={this.state.lastName} onChange={this.handleChange}  style={{ border:'1px solid #0C0B37'}} type="text" className="form-control" name="lastName" aria-describedby="emailHelp"/>
+                            <input value={this.state.lastName} onChange={this.handleChange}  style={{ border:'1px solid #0C0B37'}} type="text" className="form-control" name="lastName" aria-describedby="emailHelp" required/>
                         </div>
                     </div>
 
                     <div className="form-group">
                         <div className="col">
                             <label style={{ fontStyle:'italic'}} htmlFor="email">Email</label>
-                            <input value={this.state.email} onChange={this.handleChange}  style={{ border:'1px solid #0C0B37'}} type="email" className="form-control" name="email" aria-describedby="emailHelp"/>
+                            <input value={this.state.email} onChange={this.handleChange}  style={{ border:'1px solid #0C0B37'}} type="email" className="form-control" name="email" aria-describedby="emailHelp" required/>
                         </div>
                     </div>
 
@@ -104,7 +104,7 @@ class Email extends Component {
                     <div className="form-group">
                         <div className="col">
                             <label style={{ fontStyle:'italic'}} htmlFor="message">Leave us a message...</label>
-                            <textarea  value={this.state.message} onChange={this.handleChange}  style={{ border:'1px solid #0C0B37'}} className="form-control" name="message" rows="3"></textarea>
+                            <textarea  value={this.state.message} onChange={this.handleChange}  style={{ border:'1px solid #0C0B37'}} className="form-control" name="message" rows="3" required></textarea>
                         </div>
                     </div>
 
