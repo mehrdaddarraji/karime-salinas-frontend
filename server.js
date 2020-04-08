@@ -1,13 +1,14 @@
 // https://www.youtube.com/watch?v=JpcLd5UrDOQ
 // https://www.youtube.com/watch?v=EPnBO8HgyRU
 
-// require('dotenv').config();
+require('dotenv').config();
 
 // get express
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 //const mailgun = require("mailgun-js");
+const path = require('path');
 const email = process.env.EMAIL;
 const pass = process.env.EMAIL_PASSWORD;
 
@@ -19,8 +20,8 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // configure data parsing for email form
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 //const mg = mailgun({apiKey: api_key, domain: DOMAIN});
 
 app.post('/api/form', (req, res) => {
