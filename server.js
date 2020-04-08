@@ -1,7 +1,7 @@
 // https://www.youtube.com/watch?v=JpcLd5UrDOQ
 // https://www.youtube.com/watch?v=EPnBO8HgyRU
 
-require('dotenv').config()
+require('dotenv').config();
 
 // get express
 const express = require('express');
@@ -71,11 +71,16 @@ app.post('/api/form', (req, res) => {
 
     return res.send('Email successfully sent')
 
-})
+});
+
+// Handles any requests that don't match the ones above
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
 
 // port 3001 or whatever port process.env sets up for us
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
     console.log(`Server listening on port ${PORT}`)
-})
+});
