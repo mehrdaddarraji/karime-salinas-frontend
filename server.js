@@ -1,7 +1,7 @@
 // https://www.youtube.com/watch?v=JpcLd5UrDOQ
 // https://www.youtube.com/watch?v=EPnBO8HgyRU
 
-require('dotenv').config();
+// require('dotenv').config();
 
 // get express
 const express = require('express');
