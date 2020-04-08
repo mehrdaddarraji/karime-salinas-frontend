@@ -20,7 +20,6 @@
   "bugs": {
     "url": "https://github.com/mehrdaddarraji/karime-salinas-frontend/issues"
   },
-  "homepage": "https://github.com/mehrdaddarraji/karime-salinas-frontend#readme",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
     "body-parser": "^1.19.0",
