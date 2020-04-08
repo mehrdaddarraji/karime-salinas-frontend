@@ -19,8 +19,8 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // configure data parsing for email form
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: false }));
 //const mg = mailgun({apiKey: api_key, domain: DOMAIN});
 
 app.post('/api/form', (req, res) => {
