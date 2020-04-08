@@ -15,6 +15,9 @@ const pass = process.env.EMAIL_PASSWORD;
 // initialize express app
 const app = express();
 
+// Serve the static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 // configure data parsing for email form
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
